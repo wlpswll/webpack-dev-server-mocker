@@ -1,0 +1,24 @@
+{
+  "name": "webpack-dev-server-mocker",
+  "version": "1.0.0",
+  "description": "webpack devser mocker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlpswll/webpack-dev-server-mocker.git"
+  },
+  "keywords": [
+    "webpack",
+    "mock",
+    "devserver"
+  ],
+  "author": "yqx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wlpswll/webpack-dev-server-mocker/issues"
+  },
+  "homepage": "https://github.com/wlpswll/webpack-dev-server-mocker#readme"
+}
