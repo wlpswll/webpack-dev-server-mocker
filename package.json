@@ -1,10 +1,15 @@
 {
   "name": "webpack-dev-server-mocker",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "webpack devser mocker",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc -w",
+    "build": "tsc",
+    "test": "webpack serve --config ./test/webpack.dev.config.js",
+    "publish:npm": "tsc && npm publish",
+    "publish:loction":"tsc && yalc publish"
   },
   "repository": {
     "type": "git",
@@ -21,7 +26,10 @@
     "url": "https://github.com/wlpswll/webpack-dev-server-mocker/issues"
   },
   "homepage": "https://github.com/wlpswll/webpack-dev-server-mocker#readme",
-  "dependencies": {
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.12",
+    "html-webpack-plugin": "^5.6.0",
     "typescript": "^5.5.4",
     "webpack": "^5.93.0",
     "webpack-cli": "^5.1.4",

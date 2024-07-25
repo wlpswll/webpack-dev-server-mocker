@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>xhr-mock-plugin test</title>
+    <style>
+        #errorMessage .msg-line{
+            display: block;
+        }
+        .msg-line span{
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .msg-line {
+            display: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 15px;
+            margin-bottom: 15px;
+        }
+        .total-line {
+            color: black;
+        }
+        .error-line {
+            color: red;
+        }
+        .pass-line {
+            color: rgb(21, 136, 17);
+        }
+    </style>
+</head>
+<body>
+    <div id="message">loading...</div>
+    <div id="getReq"></div>
+    <div id="postReq"></div>
+    <div id="errorMessage"></div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

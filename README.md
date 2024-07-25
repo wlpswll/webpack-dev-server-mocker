@@ -23,7 +23,7 @@ module.exports = {
   devServer :{
     setupMiddlewares: devServerMocker({
       enable: boolean, // mock开关，默认开启
-      mockPath: path.resolve(__dirname, 'mock'), // mock 文件目录，默认扫描根路径下 mock
+      mockPath: 'mock', // mock 文件目录，默认扫描根路径下 mock
       patterns: [/\/webapi./,'/\/api\//'], // api path命中匹配规则，默认全拦截（无 mock命中时放通）
       logger: true, // 是否打印响应日志
     })
@@ -49,8 +49,8 @@ module.exports = {
       data: {
         list: [
           {
-            name: "syf",
-            age: 99
+            name: "abc",
+            age: 20
           }
         ]
       }
@@ -72,8 +72,8 @@ module.exports = {
         data: {
           list: [
             {
-              name: 'guile',
-              age: 777,
+              name: 'list test',
+              age: 18,
             },
           ],
         },
